@@ -33,4 +33,3 @@ function upperCaseFailure(jqXHR,textStatus,errorThrown) {
     var errorMessage = "An error was encountered";
     document.getElementById("outputString").innerHTML = errorMessage;
 }
-
