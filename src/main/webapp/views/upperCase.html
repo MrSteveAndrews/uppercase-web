@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Uppercase</title>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,6 +19,13 @@
     <![endif]-->
 </head>
 <body>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+
+        var upperCaseServiceUrl = [[${upperCaseServiceUrl}]];
+
+        /*]]>*/
+    </script>
 
     <div class="container-fluid">
         <div class="row"></div>
@@ -32,9 +39,9 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="inputString">Input string</label>
-                            <input type="text" class="form-control" id="inputString" placeholder="Type input string here...">
+                            <input type="text" class="form-control" id="inputString" placeholder="Type input string here..."/>
                         </div>
-                        <button type="button" onclick="upperCase()" class="btn btn-default" id="convertButton">Convert</button>
+                        <button type="button" onclick="upperCase(upperCaseServiceUrl)" class="btn btn-default" id="convertButton">Convert</button>
                     </div>
                 </div>
             </div>
