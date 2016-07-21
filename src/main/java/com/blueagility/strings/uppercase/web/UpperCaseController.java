@@ -19,7 +19,7 @@ public class UpperCaseController {
      */
     private String upperCaseServiceUrl() {
         if (StringUtils.isEmpty(upperCaseServiceUrl)) {
-            upperCaseServiceUrl = System.getProperty("uppercase.service.url");
+            upperCaseServiceUrl = System.getenv("uppercase.service.url");
             if (StringUtils.isEmpty(upperCaseServiceUrl)) {
                 throw new IllegalStateException("No URL provided for UpperCase service");
             }
