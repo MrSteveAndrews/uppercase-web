@@ -15,3 +15,8 @@ To run the container:
 * Bind container port 8080 to host port 8080 with -p 8080:8080
 * Pass in the upper case service endpoint as an environment variable with -e uppercase.service.url=http://localhost:9090/upperCase
 
+Access the web app in your favorite browser at:
+
+     http://localhost:8080/upperCase
+
+     
