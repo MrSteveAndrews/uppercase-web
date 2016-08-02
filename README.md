@@ -9,11 +9,11 @@ To create Docker image:
 
 To run the container:
 
-     docker run -d -p 8080:8080 -e uppercase.service.url=http://localhost:9090/upperCase -t blueagility/uppercase-web
+     docker run -d -p 8080:8080 -e uppercase.service.url=http://localhost:9090/uppercase-service -t blueagility/uppercase-web
 
 * Run in detached mode with -d
 * Bind container port 8080 to host port 8080 with -p 8080:8080
-* Pass in the upper case service endpoint as an environment variable with -e uppercase.service.url=http://localhost:9090/upperCase
+* Pass in the upper case service endpoint as an environment variable with -e uppercase.service.url=http://localhost:9090/uppercase-service
 
 Access the web app in your favorite browser at:
 
