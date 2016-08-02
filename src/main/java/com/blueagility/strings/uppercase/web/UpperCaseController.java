@@ -28,10 +28,10 @@ public class UpperCaseController {
         return upperCaseServiceUrl;
     }
 
-    @RequestMapping("/upperCase")
-    public String upperCase(Model model) {
+    @RequestMapping("/")
+    public String index(Model model) {
         model.addAttribute("upperCaseServiceUrl", upperCaseServiceUrl());
-        return "upperCase";
+        return "index";
     }
 
 }
