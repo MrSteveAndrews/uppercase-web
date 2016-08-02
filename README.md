@@ -17,6 +17,6 @@ To run the container:
 
 Access the web app in your favorite browser at:
 
-     http://localhost:8080/upperCase
+     http://localhost:8080/uppercase-web
 
      
