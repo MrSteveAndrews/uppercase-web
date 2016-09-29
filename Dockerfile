@@ -1,8 +1,8 @@
 FROM frolvlad/alpine-oraclejdk8:slim
 
 VOLUME /tmp
-ADD target/*.jar uppercase-web.jar
-ENTRYPOINT ["java", "-jar", "uppercase-web.jar"]
+ADD target/uppercase-web.war uppercase-web.war
+ENTRYPOINT ["java", "-jar", "uppercase-web.war"]
 
 
 
